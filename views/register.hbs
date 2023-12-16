@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    {{> header   }}
+   <body>
+        {{> navbar   }}
+        <div class="ccontainer">
+        <div class="ttext">Registration</div>
+            {{#if msg}}
+            <p class="{{msg_type}}">{{msg}}</p>
+            {{/if}}
+            <form action="/auth/register" method="post">
+                    <div class="ddata">
+                    <label for="name">Full Name</label>
+                    <input type="text" name="name" id="name" />
+                </div>
+                <div class="ddata">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" />
+                </div>
+                <div class="ddata">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" />
+                </div>
+                <div class="ddata">
+                    <label for="confirm_password">Confirm Password</label>
+                    <input type="password" name="confirm_password" id="password" />
+                </div>
+
+                <div class="bbtn">
+                    <button type="submit">Register</button>
+                </div>
+                <div class="ssignup-link">
+                    Already a member ? <a href="/">Login now</a>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

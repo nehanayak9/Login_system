@@ -1,0 +1,15 @@
+<nav>
+    <div class="llogo">Pavitra Bandhan</div>
+    <div class="mmenu">
+        
+        {{#if user }}
+            <a href="/index">Home</a>
+            <a href="/profile">Profile</a>
+            <a href="/auth/logout">Logout</a>
+        {{else}}
+            <a href="/index">Home</a>
+            <a href="/register">Register</a>
+            <a href="/">Login</a>
+        {{/if}}
+    </div>
+</nav>

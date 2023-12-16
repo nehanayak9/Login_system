@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Kalam', cursive;
+}
+body{
+  height: 100vh;
+  width: 100%;
+  background:  #c41920;
+}
+
+.ccontainer,
+.ccontainer-fluid
+{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: block;
+  background: #fff;
+  width: 410px;
+  padding: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.ccontainer .ttext{
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  color:rgb(237, 200, 49);
+}
+
+.ccontainer form{
+margin-top: -20px;
+}
+
+.ccontainer form .ddata{
+  height: 45px;
+  width: 100%;
+  margin: 40px 0;
+}
+
+form .ddata label{
+  font-size: 18px;
+}
+
+
+form .ddata input{
+  height: 100%;
+  width: 100%;
+  padding-left: 10px;
+  font-size: 17px;
+  border: 1px solid silver;
+}
+
+form .ddata input:focus{
+  border-color: orange;
+  border-bottom-width: 2px;
+}
+
+
+form .fforgot-pass{
+  margin-top: -8px;
+}
+form .fforgot-pass a{
+  color: orange;
+  text-decoration: none;
+}
+form .fforgot-pass a:hover{
+  text-decoration: underline;
+}
+
+form .bbtn{
+  margin: 30px 0;
+  height: 45px;
+  width: 100%;
+}
+
+form .bbtn button{
+  height: 100%;
+  width: 100%;
+  background: none;
+  border: none;
+  color: #fff; 
+   background:orange;
+   font-size: 18px;
+   font-weight: 500;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   cursor: pointer;
+}
+
+form .ssignup-link{
+  text-align: center;
+}
+
+form .ssignup-link a{
+  color: orange;
+  text-decoration: none;
+}
+form .ssignup-link a:hover{
+  text-decoration: underline;
+}
+   
+
+.ccontainer-fluid{
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+nav{
+  width: 100%; 
+  height:50px;
+  background:white;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .llogo{
+  font-weight:500;
+  font-size: 18px;
+  color:red;
+}
+
+nav .mmenu a{
+  margin:10px 10px ;
+  text-decoration: none;
+  font-size:18px;
+  color: orange;
+}
+
+nav .mmenu a:hover{
+  text-decoration: underline;
+}
+
+
+.ccontainer-fluid h2,.container-fluid h3{
+  font-weight: 400;
+}
+
+.ccontainer-fluid img{
+  width: 200px;
+}
+
+.error{
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
+
+.good{
+  color: green;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
+
+
+
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    {{> header   }}
+    <body>
+        {{> navbar   }}
+        <div class="ccontainer">
+            <div class="ttext">User Login</div>
+                {{#if msg}}
+                <p class="{{msg_type}}">{{msg}}</p>
+                {{/if}}
+                <form action="/auth/login" method="post">
+                    <div class="ddata">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" />
+                    </div>
+                    <div class="ddata">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" />
+                    </div>
+                    <div class="fforgot-pass">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <div class="bbtn">
+                        <button type="submit">login</button>
+                    </div>
+                    <div class="ssignup-link">
+                        Not a member? <a href="/register">Signup now</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
